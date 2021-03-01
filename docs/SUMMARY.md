@@ -1,6 +1,6 @@
 # Table of contents
 
-* [About this training](README.md)
+* [Decoupled Drupal with Gatsby](README.md)
 
 ## Fundamentals
 

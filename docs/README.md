@@ -1,6 +1,10 @@
-# About this training
+---
+description: A hands-on training workshop by Mediacurrent.
+---
 
-A training workshop by [Mediacurrent](https://mediacurrent.com).
+# Decoupled Drupal with Gatsby
+
+Learn more about [Mediacurrent](https://mediacurrent.com).
 
 ## Getting Started
 
