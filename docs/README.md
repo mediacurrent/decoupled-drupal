@@ -1,10 +1,12 @@
 ---
-description: A hands-on training workshop by Mediacurrent.
+description: A hands-on training workshop by [Mediacurrent](https://mediacurrent.com)
 ---
 
 # Decoupled Drupal with Gatsby
 
-Learn more about [Mediacurrent](https://mediacurrent.com).
+## About Mediacurrent
+
+Mediacurrent is your single source digital partner for development, design, strategy, and training. We also offer ongoing Drupal support options. The quality of our work allows organizations to grow while saving significant money over time.
 
 ## Getting Started
 
@@ -109,4 +111,3 @@ _This will start Gatsby which should immediately connect to Drupal to pull all c
 [https://nitflex.lndo.site/user/login](https://nitflex.lndo.site/user/login)
 
 Your credentials are: username: `admin`, password: `admin`
-

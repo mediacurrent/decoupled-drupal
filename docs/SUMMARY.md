@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Decoupled Drupal with Gatsby](README.md)
+* [Welcome](README.md)
 
 ## Fundamentals
 
@@ -45,4 +45,3 @@
 
 * [Gatsby and React Resources](resources/gatsby-and-react-resources.md)
 * [Other resources](resources/other-resources.md)
-
