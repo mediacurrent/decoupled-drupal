@@ -1,6 +1,6 @@
 # Gatsby and React Resources
 
-### Gatsby
+## Gatsby
 
 * [Building a blog with Gatsby and Markdown](https://egghead.io/courses/build-a-blog-with-react-and-markdown-using-gatsby) \(Video series\)
 * [Gatsby Theme Authoring](https://egghead.io/courses/gatsby-theme-authoring) \(Video series\)
@@ -12,7 +12,7 @@
 * [Create custom GraphQL Schema for empty fields](https://www.jamesdflynn.com/development/gatsbyjs-drupal-create-custom-graphql-schema-empty-fields)
 * [How to render a button or link in Twig or Gatsby](https://www.mediacurrent.com/blog/how-dynamically-render-button-or-link-drupal-or-gatsby) \(Blog post and screencast\)
 
-### Gatsby with Drupal
+## Gatsby with Drupal
 
 * [Umami Food Magazine Site](https://using-drupal.gatsbyjs.org/)
 

@@ -15,7 +15,7 @@ Then add the plugin configuration to the `gatsby-config.js` file, and the data s
 ## The Drupal Source Plugin
 
 {% hint style="info" %}
-**About JSON API:**  Before Gatsby can pull data from Drupal, the [JSON API Module](https://www.drupal.org/project/jsonapi) needs to be enabled and configured
+**About JSON API:** Before Gatsby can pull data from Drupal, the [JSON API Module](https://www.drupal.org/project/jsonapi) needs to be enabled and configured
 {% endhint %}
 
 Just like the File System Source plugin, the [Drupal Source Plugin](https://www.gatsbyjs.com/plugins/gatsby-source-drupal/) has already been added \(see line 19\), but if you were to set this up on your own you’d follow the same process:
@@ -30,7 +30,7 @@ Be sure to review the different options available for the source plugins on the 
 
 ### Configure Gatsby to pull data from Drupal
 
-Inside `gatsby-config.js` configure the Drupal Source Plugin by providing the `baseURL` for Drupal as well as the `apiBase`.  See example:
+Inside `gatsby-config.js` configure the Drupal Source Plugin by providing the `baseURL` for Drupal as well as the `apiBase`. See example:
 
 ```javascript
 // In your gatsby-config.js
@@ -47,5 +47,5 @@ module.exports = {
 }
 ```
 
-**NOTE**:  As long as Drupal's API endpoint is `jsonapi`, the `apiBase` line can be omitted.
+**NOTE**: As long as Drupal's API endpoint is `jsonapi`, the `apiBase` line can be omitted.
 

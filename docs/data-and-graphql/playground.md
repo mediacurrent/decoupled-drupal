@@ -4,7 +4,7 @@ When the Gatsby development server is running, it will include GraphiQL, which i
 
 You can access the GraphiQL interface at: [http://localhost:8000/\_\_\_graphql](http://localhost:8000/___graphql)
 
-### How to Query
+## How to Query
 
 You can query nodes created from Drupal like the following:
 
