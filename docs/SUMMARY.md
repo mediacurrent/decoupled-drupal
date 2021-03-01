@@ -17,6 +17,10 @@
 * [Project structure](getting-started/project-structure.md)
 * [Component structure](getting-started/component-structure.md)
 
+## Drupal Setup
+
+* [Configure Drupal](drupal/configure.md)
+
 ## Components
 
 * [About Components](components/components.md)
