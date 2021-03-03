@@ -1,13 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Training Pantheon",
+    title: "Decoupled Drupal",
   },
   plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     "gatsby-plugin-sass",
-    "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
-    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -23,6 +23,6 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
-    },
+    }
   ],
 };
