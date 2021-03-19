@@ -1,0 +1,511 @@
+# Add movie node.
+- entity: 'node'
+  type: 'movie'
+  title: 'Finding Nemo'
+  status: 1
+  path:
+    - pathauto: 0
+      alias: '/movies/animation/finding-nemo'
+
+  body:
+    - format: "full_html"
+      value: |
+        <p>Nemo, an adventurous young clownfish, is unexpectedly taken from his Great Barrier Reef home to a dentist's office aquarium. It's up to his worrisome father Marlin and a friendly but forgetful fish Dory to bring Nemo home -- meeting vegetarian sharks, surfer dude turtles, hypnotic jellyfish, hungry seagulls, and more along the way.</p>
+
+  field_movie_tagline:
+    - value: |
+        "There are 3.7 trillion fish in the ocean. They're looking for one."
+
+  field_movie_date:
+    - value: '2003-05-30'
+
+  field_movie_length:
+    - format: "plain_html"
+      value: "1h 40m"
+
+  field_movie_genre:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'movie_genre'
+            name: 'Animation'
+
+  field_movie_cast:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'node'
+          - type: 'cast'
+            title: 'Ellen DeGeneres'
+        dependency: 'cast.content.yml'
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'node'
+          - type: 'cast'
+            title: 'Alexander Gould'
+        dependency: 'cast.content.yml'
+
+  field_mpaa_rating:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'mpaa_rating'
+            name: 'G'
+
+  field_movie_star_rating:
+    - value: "5"
+
+  field_movie_poster:
+    - entity: media
+      bundle: image
+      name: "Nemo"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'nemo.jpg'
+          alt: 'Finding nemo poster'
+
+  field_movie_hero:
+    - entity: media
+      bundle: image
+      name: "Nemo Hero"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'nemo-hero.jpg'
+          alt: 'Nemo backdrop image'
+
+
+- entity: 'node'
+  type: 'movie'
+  title: 'Wonder Woman 1984'
+  status: 1
+  path:
+    - pathauto: 0
+      alias: '/movies/action/wonder-woman-1984'
+
+  body:
+    - format: "full_html"
+      value: |
+        <p>A botched store robbery places Wonder Woman in a global battle against a powerful and mysterious ancient force that puts her powers in jeopardy.</p>
+
+  field_movie_tagline:
+    - value: |
+        "A new era of wonder begins."
+
+  field_movie_date:
+    - value: '2020-12-25'
+
+  field_movie_length:
+    - format: "plain_html"
+      value: "2h 31m"
+
+  field_movie_genre:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'movie_genre'
+            name: 'Action'
+
+  field_movie_cast:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'node'
+          - type: 'cast'
+            title: 'Gal Gadot'
+        dependency: 'cast.content.yml'
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'node'
+          - type: 'cast'
+            title: 'Chris Pine'
+        dependency: 'cast.content.yml'
+
+  field_mpaa_rating:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'mpaa_rating'
+            name: 'PG-13'
+
+  field_movie_star_rating:
+    - value: "5"
+
+  field_movie_poster:
+    - entity: media
+      bundle: image
+      name: "Wonder Woman 1984"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'wonder-woman.jpg'
+          alt: 'Wonder Woman 1984 Poster'
+
+  field_movie_hero:
+    - entity: media
+      bundle: image
+      name: "Wonder Woman Hero"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'wonder-woman-hero.jpg'
+          alt: 'Wonder Woman Backdrop'
+
+
+- entity: 'node'
+  type: 'movie'
+  title: 'Birds of Prey - and the Fantabulous Emancipation of One Harley Quinn'
+  status: 1
+  path:
+    - pathauto: 0
+      alias: '/movies/action/birds-of-prey'
+
+  body:
+    - format: "full_html"
+      value: |
+        <p>Harley Quinn joins forces with a singer, an assassin and a police detective to help a young girl who had a hit placed on her after she stole a rare diamond from a crime lord.</p>
+
+  field_movie_tagline:
+    - value: |
+        "Mind Over Mayhem"
+
+  field_movie_date:
+    - value: '2020-02-07'
+
+  field_movie_length:
+    - format: "plain_html"
+      value: "1h 49m"
+
+  field_movie_genre:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'movie_genre'
+            name: 'Action'
+
+  field_movie_cast:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'node'
+          - type: 'cast'
+            title: 'Margot Robbie'
+        dependency: 'cast.content.yml'
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'node'
+          - type: 'cast'
+            title: 'Ewan McGregor'
+        dependency: 'cast.content.yml'
+
+  field_mpaa_rating:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'mpaa_rating'
+            name: 'R'
+
+  field_movie_star_rating:
+    - value: "5"
+
+  field_movie_poster:
+    - entity: media
+      bundle: image
+      name: "Birds of Prey"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'birds-of-prey.jpg'
+          alt: 'Birds of Prey - and the Fantabulous Emancipation of One Harley Quinn'
+
+  field_movie_hero:
+    - entity: media
+      bundle: image
+      name: "Birds of Prey Hero"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'birds-of-prey-hero.jpg'
+          alt: 'Birds of Prey Backdrop'
+
+
+- entity: 'node'
+  type: 'movie'
+  title: 'Raya and the Last Dragon'
+  status: 1
+  path:
+    - pathauto: 0
+      alias: '/movies/action/raya-and-the-last-dragon'
+
+  body:
+    - format: "full_html"
+      value: |
+        <p>Long ago, in the fantasy world of Kumandra, humans and dragons lived together in harmony. But when an evil force threatened the land, the dragons sacrificed themselves to save humanity. Now, 500 years later, that same evil has returned and it’s up to a lone warrior, Raya, to track down the legendary last dragon to restore the fractured land and its divided people.</p>
+
+  field_movie_tagline:
+    - value: |
+        "A quest to save her world."
+
+  field_movie_date:
+    - value: '2021-03-05'
+
+  field_movie_length:
+    - format: "plain_html"
+      value: "1h 47m"
+
+  field_movie_genre:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'movie_genre'
+            name: 'Animation'
+
+  field_movie_cast:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'node'
+          - type: 'cast'
+            title: 'Kelly Marie Tran'
+        dependency: 'cast.content.yml'
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'node'
+          - type: 'cast'
+            title: 'Awkwafina'
+        dependency: 'cast.content.yml'
+
+  field_mpaa_rating:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'mpaa_rating'
+            name: 'PG'
+
+  field_movie_star_rating:
+    - value: "4"
+
+  field_movie_poster:
+    - entity: media
+      bundle: image
+      name: "Raya Poster"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'raya.jpg'
+          alt: 'Raya and the Last Dragon'
+
+  field_movie_hero:
+    - entity: media
+      bundle: image
+      name: "Raya Hero"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'raya-hero.jpg'
+          alt: 'Raya and the Last Dragon Backdrop'
+
+
+- entity: 'node'
+  type: 'movie'
+  title: 'Godzilla vs. Kong'
+  status: 1
+  path:
+    - pathauto: 0
+      alias: '/movies/action/godzilla-vs-kong'
+
+  body:
+    - format: "full_html"
+      value: |
+        <p>In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages.</p>
+
+  field_movie_tagline:
+    - value: |
+        "One Will Fall"
+
+  field_movie_date:
+    - value: '2021-03-31'
+
+  field_movie_length:
+    - format: "plain_html"
+      value: "1h 53m"
+
+  field_movie_genre:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'movie_genre'
+            name: 'Action'
+
+  field_movie_cast:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'node'
+          - type: 'cast'
+            title: 'Alexander Skarsgard'
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'node'
+          - type: 'cast'
+            title: 'Millie Bobby Brown'
+
+  field_mpaa_rating:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'mpaa_rating'
+            name: 'PG-13'
+
+  field_movie_star_rating:
+    - value: "5"
+
+  field_movie_poster:
+    - entity: media
+      bundle: image
+      name: "Godzilla vs. Kong"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'godzilla-vs-kong.jpg'
+          alt: 'Godzilla vs. Kong'
+
+  field_movie_hero:
+    - entity: media
+      bundle: image
+      name: "Raya Hero"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'godzilla-vs-kong-hero.jpg'
+          alt: 'Godzilla vs. Kong fighting'
+
+
+- entity: 'node'
+  type: 'movie'
+  title: 'Soul'
+  status: 1
+  path:
+    - pathauto: 0
+      alias: '/movies/animation/godzilla-vs-kong'
+
+  body:
+    - format: "full_html"
+      value: |
+        <p>Joe Gardner is a middle school teacher with a love for jazz music. After a successful gig at the Half Note Club, he suddenly gets into an accident that separates his soul from his body and is transported to the You Seminar, a center in which souls develop and gain passions before being transported to a newborn child. Joe must enlist help from the other souls-in-training, like 22, a soul who has spent eons in the You Seminar, in order to get back to Earth.</p>
+
+  field_movie_tagline:
+    - value: |
+        "Is all this living really worth dying for?"
+
+  field_movie_date:
+    - value: '2020-12-25'
+
+  field_movie_length:
+    - format: "plain_html"
+      value: "1h 41m"
+
+  field_movie_genre:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'movie_genre'
+            name: 'Animation'
+
+  field_movie_cast:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'node'
+          - type: 'cast'
+            title: 'Jamie Foxx'
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'node'
+          - type: 'cast'
+            title: 'Tina Fey'
+
+  field_mpaa_rating:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'mpaa_rating'
+            name: 'PG'
+
+  field_movie_star_rating:
+    - value: "5"
+
+  field_movie_poster:
+    - entity: media
+      bundle: image
+      name: "Soul"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'soul.jpg'
+          alt: 'Soul Poster'
+
+  field_movie_hero:
+    - entity: media
+      bundle: image
+      name: 'Soul Hero'
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'soul-hero.jpg'
+          alt: 'Main walking on the street'

@@ -1,0 +1,10 @@
+-
+  entity: 'media'
+  bundle: 'image'
+  field_cast_photo:
+    - '#process':
+        callback: 'file'
+        args:
+          - 'image'
+          - filename: 'ellen.jpg'
+      alt: 'Ellen DeGeneres'

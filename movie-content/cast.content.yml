@@ -1,0 +1,505 @@
+# A movie cast member node.
+- entity: 'node'
+  type: 'cast'
+  title: 'Ellen DeGeneres'
+  status: 1
+  path:
+    - pathauto: 0
+      alias: '/cast/ellen-degeneres'
+  body:
+    - format: 'full_html'
+      value: |
+        <p>Ellen DeGeneres is an American stand-up comic, television host, and actress. She hosts the syndicated talk show The Ellen DeGeneres Show, and was also a judge on American Idol for one year, having joined the show in its ninth season.</p>
+
+        <p>DeGeneres has hosted both the Academy Awards and the Primetime Emmys. As a film actress, she starred in Mr. Wrong, appeared in EDtv and The Love Letter, and provided the voice of Dory in the Disney-Pixar animated film Finding Nemo, for which she was awarded a Saturn Award for Best Supporting Actress, the first and only time a voice performance won a Saturn Award.</p>
+
+        <p>She also starred in two television sitcoms, Ellen from 1994 to 1998 and The Ellen Show from 2001 to 2002. During the fourth season of Ellen in 1997, DeGeneres came out publicly as a lesbian in an appearance on The Oprah Winfrey Show. Shortly afterwards, her character Ellen Morgan also came out to a therapist played by Winfrey, and the series went on to explore various LGBT issues including the coming out process.</p>
+
+        <p>She has won twelve Emmys and numerous other awards for her work and charitable efforts.</p>
+
+  field_cast_role:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'cast_role'
+            name: 'Actor'
+
+  field_cast_photo:
+    - entity: media
+      bundle: image
+      name: "Ellen"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'ellen.jpg'
+          alt: 'Ellen DeGeneres'
+
+  field_cast_social_links:
+    - uri: 'https://www.drupal.org'
+      title: 'Twitter'
+    - uri: 'https://www.drupal.org'
+      title: 'Facebook'
+    - uri: 'https://www.drupal.org'
+      title: 'Instagram'
+
+
+- entity: 'node'
+  type: 'cast'
+  title: 'Alexander Gould'
+  status: 1
+  path:
+    - pathauto: 0
+      alias: '/cast/alexander-gould'
+  body:
+    - format: 'full_html'
+      value: |
+        <p>Alexander Jerome Gould (born May 4, 1994) is an American television actor and voice artist. He is best known for his role as Shane Botwin on the Showtime TV series Weeds and for having provided the voice of Nemo in Pixar's Finding Nemo.</p>
+
+  field_cast_role:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'cast_role'
+            name: 'Actor'
+
+  field_cast_photo:
+    - entity: media
+      bundle: image
+      name: "Alexander"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'alexander.jpg'
+          alt: 'Alexander Gould'
+
+  field_cast_social_links:
+    - uri: 'https://twitter.com/AlexanderGouId'
+      title: 'Twitter'
+    - uri: 'https://www.instagram.com/alexanderrgould/'
+      title: 'Instagram'
+
+
+- entity: 'node'
+  type: 'cast'
+  title: 'Gal Gadot'
+  status: 1
+  path:
+    - pathauto: 0
+      alias: '/cast/gal-gadot'
+  body:
+    - format: 'full_html'
+      value: |
+        <p>Gal Gadot (born: April 30, 1985) is an Israeli actress and model. She was born in Rosh Ha'ayin, Israel, to an Ashkenazi Jewish family (from Poland, Austria, Germany, and Czechoslovakia). She served in the IDF for two years, and won the Miss Israel title in 2004.</p>
+
+        <p>Gal began modeling in the late 2000s, and made her film debut in the fourth film of the Fast and Furious franchise, Fast & Furious (2009), as Gisele, an associate of the film's lead villain. Her role was expanded in the sequels Fast Five (2011) and Fast & Furious 6 (2013), in which her character was romantically linked to Han Seoul-Oh (Sung Kang). In the films, Gal performed her own stunts. She also appeared in the 2010 films Date Night (2010) and Knight and Day (2010). In early December 2013, Gal was cast as Wonder Woman in the DC Extended Universe.</p>
+
+        <p>Gal is a motorcycle enthusiast, and owns a black 2006 Ducati Monster-S2R. She has been married to Yaron Versano since September 28, 2008. They have one child.</p>
+
+  field_cast_role:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'cast_role'
+            name: 'Actor'
+
+  field_cast_photo:
+    - entity: media
+      bundle: image
+      name: "Gal"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'gal.jpg'
+          alt: 'Gal Gadot'
+
+  field_cast_social_links:
+    - uri: 'https://twitter.com/GalGadot'
+      title: 'Twitter'
+    - uri: 'https://www.instagram.com/gal_gadot/'
+      title: 'Instagram'
+    - uri: 'https://www.facebook.com/GalGadot'
+      title: 'Facebook'
+
+
+- entity: 'node'
+  type: 'cast'
+  title: 'Chris Pine'
+  status: 1
+  path:
+    - pathauto: 0
+      alias: '/cast/chris-pine'
+  body:
+    - format: 'full_html'
+      value: |
+        <p>Christopher Whitelaw "Chris" Pine (born August 26, 1980) is an American actor. He has appeared in the romantic comedies The Princess Diaries 2: Royal Engagement (2004) and Just My Luck (2006), as well as the action films Smokin' Aces (2007) and Unstoppable (2010). In 2009, he portrayed James T. Kirk in the film Star Trek.</p>
+
+  field_cast_role:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'cast_role'
+            name: 'Actor'
+
+  field_cast_photo:
+    - entity: media
+      bundle: image
+      name: "Chris Pine"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'chris-pine.jpg'
+          alt: 'Chris Pine'
+
+  field_cast_social_links:
+
+
+- entity: 'node'
+  type: 'cast'
+  title: 'Margot Robbie'
+  status: 1
+  path:
+    - pathauto: 0
+      alias: '/cast/margot-robbie'
+  body:
+    - format: 'full_html'
+      value: |
+        <p>Margot Elise Robbie (born 2 July 1990) is an Australian actress and producer. She has received nominations for two Academy Awards and five BAFTA Awards. In 2017, Time magazine named her one of the 100 most influential people in the world, and in 2019, she was ranked among the world's highest-paid actresses.</p>
+
+        <p>Robbie studied drama at Somerset College and began her career in Australian independent films in the late 2000s, before working in the soap opera Neighbours (2008–2011). After moving to America, she starred in the ABC drama series Pan Am (2011–2012) and had her breakthrough role in Martin Scorsese's black comedy film The Wolf of Wall Street (2013). Robbie's profile continued to grow with starring roles as a grifter in Focus (2015), Jane Porter in The Legend of Tarzan (2016), and Harley Quinn in the DC Extended Universe, beginning with Suicide Squad (2016).</p>
+
+        <p>Robbie garnered critical acclaim and nominations for the BAFTA Award and Academy Award for Best Actress for portraying the disgraced figure skater Tonya Harding in the biopic I, Tonya (2017). This acclaim continued for her roles as Queen Elizabeth I in the period drama Mary Queen of Scots (2018), Sharon Tate in the comedy-drama Once Upon a Time in Hollywood (2019), and a fictional Fox News employee in the drama Bombshell (2019). She received BAFTA Award nominations for all three and a nomination for the Academy Award for Best Supporting Actress for the lattermost.</p>
+
+        <p>Robbie is married to the filmmaker Tom Ackerley. They are among the founders of the production company LuckyChap Entertainment, under which she has produced some of her own films, as well as the television series Dollface (2019–present).</p>
+
+  field_cast_role:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'cast_role'
+            name: 'Actor'
+
+  field_cast_photo:
+    - entity: media
+      bundle: image
+      name: "Margot Robbie"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'margot-robbie.jpg'
+          alt: 'Margot Robbie'
+
+  field_cast_social_links:
+    - uri: 'https://twitter.com/MargotRobbie'
+      title: 'Twitter'
+    - uri: 'https://www.instagram.com/margotrobbie/'
+      title: 'Instagram'
+    - uri: 'https://www.facebook.com/MargotRobbie'
+      title: 'Facebook'
+
+
+- entity: 'node'
+  type: 'cast'
+  title: 'Ewan McGregor'
+  status: 1
+  path:
+    - pathauto: 0
+      alias: '/cast/ewan-mcgregor'
+  body:
+    - format: 'full_html'
+      value: |
+        <p>Ewan Gordon McGregor was born 31 March 1971 in Crieff, Scotland. At 16, he left Crieff and Morrison Academy to join the Perth Repertory Theatre. His parents encouraged him to leave school and pursue his acting goals rather than be unhappy. McGregor studied drama for a year at Kirkcaldly in Fife, then enrolled at London's Guildhall School of Music and Drama for a three-year course. He studied alongside Daniel Craig and Alistair McGowan among others, and left right before graduating after snagging the role of Private Mick Hopper in Dennis Potter's 1993 six-part Channel 4 series "Lipstick on Your Collar" (1993).</p>
+
+        <p>His first notable role was that of Alex Law in Shallow Grave (1994), directed by Danny Boyle, written by John Hodge and produced by Andrew MacDonald. This was followed by The Pillow Book (1996) and Trainspotting (1996), the latter of which brought him to the public's attention.</p>
+
+        <p>He is now one of the most critically acclaimed actors of his generation, and portrays Obi-wan Kenobi in the first three Star Wars episodes. McGregor has two daughters (Clara Mathilde and Esther Rose) with French production designer Eve Mavrakis, whom he met while working on the TV show "Kavanagh QC" (1995) and later married. McGregor filed for divorce in 2018.</p>
+
+        <p>McGregor has a production company with friends Jonny Lee Miller, Sean Pertwee, Jude Law and Sadie Frost. Called Natural Nylon, they aim to make innovative films that do not conform to Hollywood standards.</p>
+
+  field_cast_role:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'cast_role'
+            name: 'Actor'
+
+  field_cast_photo:
+    - entity: media
+      bundle: image
+      name: "Ewan McGregor"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'ewan-mcgregor.jpg'
+          alt: 'Ewan McGregor'
+
+  field_cast_social_links:
+    - uri: 'https://twitter.com/mcgregor_ewan'
+      title: 'Twitter'
+
+
+- entity: 'node'
+  type: 'cast'
+  title: 'Kelly Marie Tran'
+  status: 1
+  path:
+    - pathauto: 0
+      alias: '/cast/kelly-marie-tran'
+  body:
+    - format: 'full_html'
+      value: |
+        <p>Kelly Marie Tran is a Vietnamese-American film actress known for her performances as Rose Tico in Star Wars: The Last Jedi and Star Wars: The Rise of Skywalker. She has also appeared as a part of CollegeHumor Originals, as Margeurite in About a Boy, and as Sara from Life on Normal Street.</p>
+
+  field_cast_role:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'cast_role'
+            name: 'Actor'
+
+  field_cast_photo:
+    - entity: media
+      bundle: image
+      name: "Kelly Marie Tran"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'kelly-marie-tran.jpg'
+          alt: 'Kelly Marie Tran'
+
+  field_cast_social_links:
+    - uri: 'https://www.instagram.com/kellymarietran/'
+      title: 'Instagram'
+
+
+- entity: 'node'
+  type: 'cast'
+  title: 'Awkwafina'
+  status: 1
+  path:
+    - pathauto: 0
+      alias: '/cast/awkwafina'
+  body:
+    - format: 'full_html'
+      value: |
+        <p>Nora Lum (born June 2, 1988), known by the stage name Awkwafina, is an actress and rapper, known for her breakthrough roles in Crazy Rich Asians (2018), Ocean's Eight (2018) and The Farewell (2019), the latter for which she won a Golden Globe award for Best Actress in a Comedy.</p>
+
+  field_cast_role:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'cast_role'
+            name: 'Actor'
+
+  field_cast_photo:
+    - entity: media
+      bundle: image
+      name: "Awkwafina"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'awkwafina.jpg'
+          alt: 'Awkwafina'
+
+  field_cast_social_links:
+    - uri: 'https://twitter.com/awkwafina'
+      title: 'Twitter'
+    - uri: 'https://www.instagram.com/awkwafina/'
+      title: 'Instagram'
+    - uri: 'https://www.facebook.com/awkwafina'
+      title: 'Facebook'
+
+
+- entity: 'node'
+  type: 'cast'
+  title: 'Alexander Skarsgård'
+  status: 1
+  path:
+    - pathauto: 0
+      alias: '/cast/alexander-skarsgard'
+  body:
+    - format: 'full_html'
+      value: |
+        <p>Alexander Johan Hjalmar Skarsgård (born August 25, 1976) is a Swedish actor. He is best known for his roles as vampire Eric Northman on the HBO series True Blood, a male model in Zoolander and Brad Colbert in the HBO miniseries Generation Kill. Description above from the Wikipedia article Alexander Skarsgård, licensed under CC-BY-SA, full list of contributors on Wikipedia.</p>
+
+  field_cast_role:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'cast_role'
+            name: 'Actor'
+
+  field_cast_photo:
+    - entity: media
+      bundle: image
+      name: "Alexander Skarsgard"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'alexander-skarsgard.jpg'
+          alt: 'Alexander Skarsgård'
+
+  field_cast_social_links:
+
+
+- entity: 'node'
+  type: 'cast'
+  title: 'Millie Bobby Brown'
+  status: 1
+  path:
+    - pathauto: 0
+      alias: '/cast/millie-bobby-brown'
+  body:
+    - format: 'full_html'
+      value: |
+        <p>Millie Bobby Brown (born 19 February 2004) is an English actress and producer. She was born in Spain, to British parents. They moved to Orlando, Florida in 2011, where Millie went to acting workshops to pass the time on a Saturday, and it was there that a top Hollywood talent scout called and told Millie's parents that "she has instincts you cannot teach." She advised Millie's parents that Millie could "mix it with the best kids in Hollywood." They packed up and drove from Orlando to Los Angeles, and within a week, Millie was meeting with the town's top children's talent agencies. She was offered representation by all the agents that she met. Within three months of being in Hollywood, Millie was offered the role of young Alice in ABC's Once Upon a Time in Wonderland. In November 2013, after just one self-taped audition, and without meeting the producers/directors, Millie was offered the role of Madison O'Donnell in BBC America's show, "Intruders."</p>
+
+  field_cast_role:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'cast_role'
+            name: 'Actor'
+
+  field_cast_photo:
+    - entity: media
+      bundle: image
+      name: "millie-bobby-brown"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'millie-bobby-brown.jpg'
+          alt: 'millie-bobby-brown'
+
+  field_cast_social_links:
+    - uri: 'https://twitter.com/milliebbrown'
+      title: 'Twitter'
+    - uri: 'https://www.instagram.com/milliebobbybrown/'
+      title: 'Instagram'
+    - uri: 'https://www.facebook.com/milliebobbybrown'
+      title: 'Facebook'
+
+
+- entity: 'node'
+  type: 'cast'
+  title: 'Jamie Foxx'
+  status: 1
+  path:
+    - pathauto: 0
+      alias: '/cast/jamie-foxx'
+  body:
+    - format: 'full_html'
+      value: |
+        <p>Eric Marlon Bishop (born December 13, 1967), professionally known as Jamie Foxx, is an American actor, singer-songwriter, stand-up comedian, and talk radio host. As an actor, his work in the film Ray earned him the Academy Award and BAFTA Award for Best Actor as well as the Golden Globe Award for Best Actor in a musical/comedy. He is also a Grammy Award winning musician, producing two albums which have charted highly on the Billboard 200: Unpredictable, which topped the chart, and Intuition.</p>
+
+        <p>Foxx was abandoned seven months after birth, and was subsequently adopted and raised in Terrell by his mother's adoptive parents, Estelle and Mark Talley. Foxx had a strict Baptist upbringing and began piano lessons at the age of five by his grandmother's orders. He has often acknowledged his grandmother's influence in his life as one of the greatest reasons for his success. When he found that female comedians were often called first to perform, he changed his name to Jamie Foxx, feeling that it was an ambiguous enough name to disallow any biases. He chose his surname as a tribute to comedian Redd Foxx.</p>
+
+        <p>From 1996 to 2001, Foxx starred in his own sitcom The Jamie Foxx Show, and in 1992 he made his film debut in Toys a comedy directed by Barry Levinson. Following Toys, his first dramatic role came in Oliver Stone's 1999 film Any Given Sunday, where he portrayed a hard-partying American football player. Foxx has since evolved into a respected dramatic actor. Foxx was featured as taxi driver Max Durocher in the film Collateral alongside Tom Cruise, for which he received outstanding reviews and a nomination for the Academy Award for Best Supporting Actor. His standout performance, however, was his portrayal of Ray Charles in the biopic Ray (2004), for which he won the Academy Award for Best Actor and the BAFTA Award for Best Actor in a Leading Role. Foxx is the second male in history to receive two acting Oscar nominations in the same year for two different movies, Collateral and Ray.</p>
+
+        <p>In September 2007, Foxx was awarded a star on the Hollywood Walk of Fame. </p>
+
+  field_cast_role:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'cast_role'
+            name: 'Actor'
+
+  field_cast_photo:
+    - entity: media
+      bundle: image
+      name: "Jamie Foxx"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'jamie-foxx.jpg'
+          alt: 'Jamie Foxx'
+
+  field_cast_social_links:
+    - uri: 'https://twitter.com/iamjamiefoxx'
+      title: 'Twitter'
+    - uri: 'https://www.facebook.com/jamiefoxx'
+      title: 'Instagram'
+
+
+- entity: 'node'
+  type: 'cast'
+  title: 'Tina Fey'
+  status: 1
+  path:
+    - pathauto: 0
+      alias: '/cast/tina-fey'
+  body:
+    - format: 'full_html'
+      value: |
+        <p>Elizabeth Stamatina "Tina" Fey (born May 18, 1970) is an American actress, comedian, writer and producer, known for her work on the NBC sketch comedy series Saturday Night Live (SNL, 1997–2006), the critically acclaimed NBC comedy series 30 Rock (2006–2013), and such films as Mean Girls (2004), Baby Mama (2008), Date Night (2010), and Admission (2013).</p>
+
+        <p>Fey first broke into comedy as a featured player in the Chicago-based improvisational comedy group The Second City. She then joined SNL as a writer, later becoming head writer and a performer, known for her position as co-anchor in the Weekend Update segment. In 2004 she adapted the screenplay Mean Girls in which she also co-starred. After leaving SNL in 2006, she created the television series 30 Rock, a situation comedy loosely based on her experiences at SNL. In the series, Fey portrays the head writer of a fictional sketch comedy series. In 2008, she starred in the comedy film Baby Mama, alongside former SNL co-star Amy Poehler. Fey next appeared alongside Steve Carell in the 2010 comedy film Date Night and with Will Ferrell in the animated film Megamind.</p>
+
+        <p>Fey has received eight Emmy Awards, two Golden Globe Awards, five Screen Actors Guild Awards, four Writers Guild of America Awards and has been nominated for a Grammy Award for her autobiographical book Bossypants, which topped the The New York Times Best Seller list for five weeks. In 2008, the Associated Press (AP) gave Fey the AP Entertainer of the Year award for her satirical portrayal of Republican vice presidential candidate Sarah Palin in a guest appearance on SNL. In 2010, Fey was the recipient of the Mark Twain Prize for American Humor, the youngest-ever winner of the award. On January 13, 2013, Fey hosted the Golden Globe Awards with her long-time friend and fellow comedian, Amy Poehler. Their performance was critically acclaimed. The duo hosted again the following year to similar acclaim, generating the highest ratings for the annual ceremony in ten years.</p>
+
+  field_cast_role:
+    - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'cast_role'
+            name: 'Actor'
+
+  field_cast_photo:
+    - entity: media
+      bundle: image
+      name: "Tina Fey"
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - filename: 'tina-fey.jpg'
+          alt: 'Tina Fey'
+
+  field_cast_social_links:
